@@ -1,0 +1,10 @@
+F:\Study\VSProject\Study_Thread\FL_Thread\FL_Browser\bin\Debug\FL_Browser.exe.config
+F:\Study\VSProject\Study_Thread\FL_Thread\FL_Browser\bin\Debug\FL_Browser.exe
+F:\Study\VSProject\Study_Thread\FL_Thread\FL_Browser\bin\Debug\FL_Browser.pdb
+F:\Study\VSProject\Study_Thread\FL_Thread\FL_Browser\obj\Debug\FL_Browser.csprojAssemblyReference.cache
+F:\Study\VSProject\Study_Thread\FL_Thread\FL_Browser\obj\Debug\FL_Browser.Form1.resources
+F:\Study\VSProject\Study_Thread\FL_Thread\FL_Browser\obj\Debug\FL_Browser.Properties.Resources.resources
+F:\Study\VSProject\Study_Thread\FL_Thread\FL_Browser\obj\Debug\FL_Browser.csproj.GenerateResource.cache
+F:\Study\VSProject\Study_Thread\FL_Thread\FL_Browser\obj\Debug\FL_Browser.csproj.CoreCompileInputs.cache
+F:\Study\VSProject\Study_Thread\FL_Thread\FL_Browser\obj\Debug\FL_Browser.exe
+F:\Study\VSProject\Study_Thread\FL_Thread\FL_Browser\obj\Debug\FL_Browser.pdb

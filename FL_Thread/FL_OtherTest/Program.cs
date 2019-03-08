@@ -156,7 +156,7 @@ namespace FL_OtherTest
                 Console.WriteLine("3 is type.");
             else
                 Console.WriteLine("3 is not type.");
-            
+
             //不是
             isType = ta is TypeOther;
             if (isType)
@@ -193,7 +193,7 @@ namespace FL_OtherTest
             }
 
             //运算符重载
-            public static  string operator +( TypeA a , TypeA b)
+            public static string operator +(TypeA a, TypeA b)
             {
                 return a.Age + b.Age;
             }
@@ -204,5 +204,10 @@ namespace FL_OtherTest
 
         }
     }
+
+    class RAM_Stack {
+
+    }
+
 
 }

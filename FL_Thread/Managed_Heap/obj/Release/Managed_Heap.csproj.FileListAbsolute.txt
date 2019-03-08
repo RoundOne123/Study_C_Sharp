@@ -1,0 +1,7 @@
+F:\Study\Git\Study_Thread\FL_Thread\Managed_Heap\bin\Release\Managed_Heap.exe.config
+F:\Study\Git\Study_Thread\FL_Thread\Managed_Heap\bin\Release\Managed_Heap.exe
+F:\Study\Git\Study_Thread\FL_Thread\Managed_Heap\bin\Release\Managed_Heap.pdb
+F:\Study\Git\Study_Thread\FL_Thread\Managed_Heap\obj\Release\Managed_Heap.csproj.CoreCompileInputs.cache
+F:\Study\Git\Study_Thread\FL_Thread\Managed_Heap\obj\Release\Managed_Heap.exe
+F:\Study\Git\Study_Thread\FL_Thread\Managed_Heap\obj\Release\Managed_Heap.pdb
+F:\Study\Git\Study_Thread\FL_Thread\Managed_Heap\obj\Release\Managed_Heap.csprojAssemblyReference.cache

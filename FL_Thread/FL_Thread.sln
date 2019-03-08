@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FL_Browser", "FL_Browser\FL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FL_OtherTest", "FL_OtherTest\FL_OtherTest.csproj", "{87A5C2B2-43F4-49B5-8AEA-28E2D9D2CA7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Managed_Heap", "Managed_Heap\Managed_Heap.csproj", "{265A217B-AC4B-4E02-8F6D-7772D6B82B23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{87A5C2B2-43F4-49B5-8AEA-28E2D9D2CA7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87A5C2B2-43F4-49B5-8AEA-28E2D9D2CA7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87A5C2B2-43F4-49B5-8AEA-28E2D9D2CA7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{265A217B-AC4B-4E02-8F6D-7772D6B82B23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{265A217B-AC4B-4E02-8F6D-7772D6B82B23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{265A217B-AC4B-4E02-8F6D-7772D6B82B23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{265A217B-AC4B-4E02-8F6D-7772D6B82B23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

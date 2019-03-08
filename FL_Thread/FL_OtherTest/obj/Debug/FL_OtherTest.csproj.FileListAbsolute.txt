@@ -1,0 +1,7 @@
+F:\Study\Git\Study_Thread\FL_Thread\FL_OtherTest\bin\Debug\FL_OtherTest.exe.config
+F:\Study\Git\Study_Thread\FL_Thread\FL_OtherTest\bin\Debug\FL_OtherTest.exe
+F:\Study\Git\Study_Thread\FL_Thread\FL_OtherTest\bin\Debug\FL_OtherTest.pdb
+F:\Study\Git\Study_Thread\FL_Thread\FL_OtherTest\obj\Debug\FL_OtherTest.csprojAssemblyReference.cache
+F:\Study\Git\Study_Thread\FL_Thread\FL_OtherTest\obj\Debug\FL_OtherTest.csproj.CoreCompileInputs.cache
+F:\Study\Git\Study_Thread\FL_Thread\FL_OtherTest\obj\Debug\FL_OtherTest.exe
+F:\Study\Git\Study_Thread\FL_Thread\FL_OtherTest\obj\Debug\FL_OtherTest.pdb

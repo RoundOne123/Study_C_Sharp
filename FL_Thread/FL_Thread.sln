@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FL_Http", "FL_Http\FL_Http.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FL_Browser", "FL_Browser\FL_Browser.csproj", "{A1B5C75C-1EFF-4CE1-ABB5-B11FE0528B48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FL_OtherTest", "FL_OtherTest\FL_OtherTest.csproj", "{87A5C2B2-43F4-49B5-8AEA-28E2D9D2CA7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A1B5C75C-1EFF-4CE1-ABB5-B11FE0528B48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1B5C75C-1EFF-4CE1-ABB5-B11FE0528B48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1B5C75C-1EFF-4CE1-ABB5-B11FE0528B48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87A5C2B2-43F4-49B5-8AEA-28E2D9D2CA7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87A5C2B2-43F4-49B5-8AEA-28E2D9D2CA7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87A5C2B2-43F4-49B5-8AEA-28E2D9D2CA7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87A5C2B2-43F4-49B5-8AEA-28E2D9D2CA7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

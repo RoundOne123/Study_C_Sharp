@@ -1,0 +1,57 @@
+DLL热更新方案：
+	说明：因为要热更新，所以要求把需要更新的资源（资源+dll），放在一个可读写的位置，即persistentDataPath下。
+	在移动端的资源读取逻辑都是从persistentDataPath加载的。
+	
+	一：将项目中一些需要热更的代码通过某种方式打成DLL。
+			a.哪些代码是需要热更的？
+			b.如何打的DLL？
+	
+	二：游戏的入口是一个不需要热更的脚本。
+		入口的脚本：加载DLL -> 通过反射调用可以热更部分的真正的游戏入口。
+			a.如何加载DLL？DLL的路径？
+			b.反射
+			
+	三：热更新逻辑
+		1.检查是否忽略本次热更新
+		2.忽略：do nothing, and conutine
+		  不忽略：
+			[补全基础资源]：确保persistentDataPath下存在基础文件，不存在则从streamingAssetsPath下读取并拷贝。
+			（基础资源：直接打进APK的资源，保存在streamingAssetsPath路径下
+			主要是：版本配置文件 + 一些 在热更新逻辑前需要加载的资源）
+				读取本地配置文件：
+					先从persistentDataPath下读取，获取主版本号
+					如果persistentDataPath下不存在，则去streamingAssetsPath下拷贝
+					拷贝过程：streamingAssetsPath下需要使用www读取，而写入persistentDataPath下，可以使用FileStream写入。
+				其他基础资源：
+					从streamingAssetsPath拷贝到persistentDataPath。
+			
+			[检测安装包版本与persistentDataPath存资源版本]
+				目的：每次覆盖安装的时候，persistentDataPath下的数据仍然存在，
+					添加这步操作是为了每次覆盖安装之后清除persistentDataPath下的上个版本的资源拷贝。
+					防止运行之前版本遗留的逻辑。
+				如果APK版本和persistentDataPath资源不一致：
+					则执行HotFixUtil.ResetApp方法：删除persistentDataPath下资源 + 一些参数状态的重置
+						关于删除资源：==>
+							AB使用到了Caching.ClearCache()
+					并重启
+				如果一致：
+					根据本地配置文件判断persistentDataPath下资源是否完整，并找出需要补全：
+						不同类型资源判断是否存在的逻辑不同
+						完整：do nothing and continue
+						不完整：根据上一步骤找出的资源，进行补全（从APK内部拷贝）。
+						
+					对比服务器和本地的【版本配置文件】的主版本号，判断是否需要从服务器热更新：
+						不需要：do nothing and continue
+						需要：
+							显示热更新UI提示，点击更新则更新，不更新则退出游戏。
+							更新步骤即，对比服务器和本地的【版本配置文件】的资源信息，找出需要更新的和不需要更新的。
+							进行相应的下载和删除操作。
+							重启游戏、设置下一次不用更新。
+						
+注：在热更的过程中：存在网络中断、AssetBundleManifest文件、以及ReStartGame等其它问题，这里面没有具体考虑。						
+							
+备忘：
+	动态添加脚本：在脚本的OnEnable OnDisable中实现
+		解决大图片内存占用过大的问题：
+		解决字体适配问题；
+			
